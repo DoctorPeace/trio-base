@@ -53,7 +53,7 @@ spec:
           name: nginx-config  # referencing the contents of the ConfigMap
       containers:
       - name: nginx-container
-        image: drpeace/flask-nginx:latest
+        image: nginx:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
