@@ -7,4 +7,4 @@ FROM mysql:5.7
 # Add the content of the .sql file to your image
 # All scripts copied to docker-entrypoint-initdb.d/ are automatically
 # executed during container startup
-COPY CreateTable.sql
+COPY CreateTable.sql docker-entrypoint-initdb.d/
